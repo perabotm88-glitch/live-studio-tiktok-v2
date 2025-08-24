@@ -1,0 +1,31 @@
+{
+  "name": "live-studio-tiktok",
+  "version": "2.0.0",
+  "description": "Live Studio TikTok dengan komentar listener & TTS auto reply",
+  "main": "main.js",
+  "author": "YourName",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "electron": "28.2.2",
+    "tiktok-live-connector": "1.0.0",
+    "say": "0.16.0"
+  },
+  "devDependencies": {
+    "electron-builder": "24.13.3"
+  },
+  "build": {
+    "appId": "com.tiktok.livestudio",
+    "productName": "Live Studio TikTok",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
